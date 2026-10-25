@@ -151,7 +151,7 @@ Return only the reply text, without explanations or quotation marks.
 
     try:
         result = client.models.generate_content(
-            model="gemini-3.8-flash",
+            model="gemini-1.5-flash",
             contents=prompt
         )
         return jsonify({"reply": result.text or "No reply was generated."})
